@@ -1,0 +1,121 @@
+.favorites-page {
+  min-height: calc(100vh - 80px);
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.favorites-head {
+  color: var(--color-font-primary);
+  font-family: DM Sans;
+  font-size: 44px;
+  line-height: 1.09;
+  letter-spacing: -0.88px;
+  margin-bottom: 20px;
+}
+
+.favorites-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.exercises-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-menu-trash {
+  display: flex;
+  gap: 2px;
+}
+
+.exercises-trash-btn {
+  border: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.card-menu-trash-icon {
+  stroke: var(--color-font-primary);
+  fill: none;
+}
+
+.exercises-start-btn {
+  border: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  display: flex;
+  padding-top: 4px;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+}
+
+.favorites-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+/* ================================ */
+@media screen and (min-width: 768px) {
+  .favorites-page {
+    padding-top: 80px;
+  }
+
+  .favorites-head {
+    margin-bottom: 32px;
+  }
+
+  .favorites-content {
+    gap: 64px;
+  }
+
+  .favorites-cards {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
+    column-gap: 16px;
+  }
+}
+
+/* ===================================== */
+@media screen and (min-width: 1440px) {
+  .favorites-content {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .exercises-partial {
+    width: 850px;
+    height: 500px;
+    overflow-y: auto;
+  }
+
+  .exercises-partial::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 4px;
+    background: var(--color-font-grey);
+  }
+
+  .exercises-partial::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .exercises-partial::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 4px;
+  }
+
+  .card-item.favorite-card-item {
+    width: 405px;
+  }
+
+  .favorites-cards {
+    width: 826px;
+  }
+}

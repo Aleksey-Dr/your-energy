@@ -1,0 +1,23 @@
+/* utils */
+@import url('./utils/variables.css');
+
+/* base */
+
+@import url('./base/reset.css');
+@import url('./base/typography.css');
+@import url('./base/common.css');
+@import url('./base/container.css');
+
+/* layouts */
+@import url('./layout/header.css');
+@import url('./layout/hero.css');
+@import url('./layout/footer.css');
+@import url('./layout/favorites.css');
+@import url('./layout/menu.css');
+@import url('./layout/home.css');
+@import url('./layout/card.css');
+@import url('./layout/modal.css');
+
+/* components */
+@import url('./components/pagination.css');
+@import url('./components/totopbutton.css');

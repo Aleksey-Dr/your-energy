@@ -1,0 +1,157 @@
+/* menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.menu__exercises {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.menu__exercises-title {
+  color: var(--color-font-primary);
+  font-size: 28px;
+  line-height: 1.36;
+  letter-spacing: -0.56px;
+  cursor: pointer;
+}
+
+.menu__exercises-subtitle {
+  color: var(--color-font-transparrent-1);
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: -0.48px;
+  text-transform: capitalize;
+}
+
+/* categories */
+.categories__menu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.categories__menu-item {
+  position: relative;
+  color: var(--color-font-transparrent-1);
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.categories__menu-item:hover {
+  cursor: pointer;
+  color: var(--color-font-primary);
+}
+
+.current {
+  color: var(--color-font-primary);
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--color-font-primary);
+}
+
+/* search */
+.menu-search {
+  width: 335px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+}
+
+.menu-search-input {
+  width: 100%;
+  color: var(--color-font-primary);
+  background: 0 0;
+  border: 1px solid var(--color-font-primary);
+  border-radius: 30px;
+  outline: none;
+  padding: 12px 14px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.menu-search-btn {
+  position: absolute;
+  right: 14px;
+  width: 18px;
+  background: 0 0;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  display: flex;
+  padding: 0;
+}
+
+.menu-search-icon {
+  stroke: var(--color-font-primary);
+  fill: none;
+}
+
+.menu-close-icon {
+  stroke: var(--color-font-primary);
+}
+
+/* ========== Tablet ============= */
+@media screen and (min-width: 768px) {
+  .menu {
+    margin-bottom: 32px;
+  }
+
+  .menu__exercises {
+    margin-bottom: 32px;
+  }
+
+  .menu__exercises-title {
+    font-size: 44px;
+    line-height: 1.09;
+    letter-spacing: -0.88px;
+  }
+
+  .menu-search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .menu-search {
+    width: 273px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .categories__menu-item {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/* ========== Desktop ============= */
+@media screen and (min-width: 1440px) {
+  .menu {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .menu-search-box {
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+    /* margin-top: 12px; */
+  }
+}
