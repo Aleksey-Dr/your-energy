@@ -1,1 +1,1 @@
-{"version":3,"file":"commonHelpers2.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"commonHelpers2.js","sources":["../src/js/menu.js"],"sourcesContent":["import { refs } from './refs';\n\nrefs.exerciseRefresh.addEventListener('click', onRefresh);\n\nfunction onRefresh(e) {\n  location.reload();\n}\n"],"names":["refs","onRefresh","e"],"mappings":"mFAEAA,EAAK,gBAAgB,iBAAiB,QAASC,CAAS,EAExD,SAASA,EAAUC,EAAG,CACpB,SAAS,OAAM,CACjB"}
