@@ -105,7 +105,7 @@ function createMarkup(arr) {
                             width="16"
                             height="16"
                         >
-                            <use href="../img/sprite.svg#icon-trash"></use>
+                            <use href="./img/sprite.svg#icon-trash"></use>
                         </svg>
                     </button>
                 </div>
