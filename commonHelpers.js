@@ -9,7 +9,7 @@ import"./assets/modal-e281c524.js";import"./assets/vendor-5014e6d0.js";const g={
                             width="16"
                             height="16"
                         >
-                            <use href="./img/sprite.svg#icon-trash"></use>
+                            <use href="../img/sprite.svg#icon-trash"></use>
                         </svg>
                     </button>
                 </div>
