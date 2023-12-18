@@ -14,9 +14,9 @@
     
     <script type="module" crossorigin src="/your-energy/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/your-energy/assets/vendor-5014e6d0.js">
-    <link rel="modulepreload" crossorigin href="/your-energy/assets/quote-3898cc21.js">
+    <link rel="modulepreload" crossorigin href="/your-energy/assets/quote-5b504afc.js">
     <link rel="stylesheet" href="/your-energy/assets/vendor-34b8c2a2.css">
-    <link rel="stylesheet" href="/your-energy/assets/quote-7201827c.css">
+    <link rel="stylesheet" href="/your-energy/assets/quote-e5e23a97.css">
   </head>
   <body>
     <div class="wrapper favorites">
@@ -24,9 +24,9 @@
   <div class="header__container">
     <div class="header__box">
       <div class="logo__icon">
-        <a href="./index.html">
+        <a href="./index.html" aria-label="Logotype Your Energy">
           <svg
-            id="footer-logo-icon"
+            id="header-logo-icon"
             width="132"
             height="24"
           >
@@ -36,8 +36,8 @@
       </div>
       <nav class="navigation tablet-desktop">
         <ul>
-          <li class="menu-link menu-link-home"><a href="./index.html">Home</a></li>
-          <li class="menu-link menu-link-favorites"><a href="./favorites.html">Favorites</a></li>
+          <li class="menu-link menu-link-home"><a href="./index.html" aria-label="Home page">Home</a></li>
+          <li class="menu-link menu-link-favorites"><a href="./favorites.html" aria-label="Favorites page">Favorites</a></li>
         </ul>
       </nav>
       <div class="social-box">
@@ -82,6 +82,7 @@
       </div>
       <button
         type="button"
+        aria-label="Open mobile menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
         class="burger-menu-btn js-open-menu"
@@ -97,8 +98,11 @@
   <div class="mobile-backdrop js-mobile-menu" id="mobile-menu">
     <div class="mobile-menu-container">
       <button
-        class="close-menu-btn js-close-menu"
         type="button"
+        aria-label="Close mobile menu"
+        aria-expanded="true"
+        aria-controls="mobile-menu"
+        class="close-menu-btn js-close-menu"
       >
         <svg width="16" height="16">
           <use href="/your-energy/assets/sprite-c1fb1bf2.svg#icon-cross"></use>
@@ -106,8 +110,8 @@
       </button>
       <nav class="mobile-navigation">
         <ul class="mobile-navigation-list">
-          <li class="menu-link"><a href="./index.html">Home</a></li>
-          <li class="menu-link menu-link-navigation"><a href="./favorites.html">Favorites</a></li>
+          <li class="menu-link menu-link-home"><a href="./index.html">Home</a></li>
+          <li class="menu-link menu-link-navigation menu-link-favorites"><a href="./favorites.html">Favorites</a></li>
         </ul>
       </nav>
       <div class="mobile-social-box">
